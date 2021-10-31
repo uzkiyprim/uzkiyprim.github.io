@@ -31,31 +31,41 @@
 	
 	<script src="https://kit.fontawesome.com/69fabb26f9.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./css/style.css" >
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38991191-5"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-38991191-5');
+	</script>
+
 </head>
 
 <body>
-	<header id="head">
+	<header>
 		<nav id="navbar-mynavbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-purple">
-			<a class="navbar-brand scroll-to" href="#head">Узкий взгляд</a>
+			<a class="navbar-brand" href="#">Узкий взгляд</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link scroll-to" href="#about">О проекте</a>
+						<a class="nav-link" href="#about">О проекте</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-to" href="#residents">Наши резиденты</a>
+						<a class="nav-link" href="#residents">Наши резиденты</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-to" href="#media">СМИ о нас</a>
+						<a class="nav-link" href="#media">СМИ о нас</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-to" href="#partners">Наши партнеры</a>
+						<a class="nav-link" href="#partners">Наши партнеры</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link scroll-to" href="#staff">Куратор проекта</a>
+						<a class="nav-link" href="#staff">Куратор проекта</a>
 					</li>
 				</ul>
 			</div>
@@ -73,7 +83,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#about" class="scroll-to title">
+			<a href="#about">
 				<i aria-hidden="true" class="fas fa-angle-down fa-5x"></i>
 			</a>
 		</div>
@@ -775,14 +785,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script>
         $('body').scrollspy({ target: '#navbar-mynavbar' })
-		
-		$("a.scroll-to").on("click", function(e){
-			e.preventDefault();
-			var anchor = $(this).attr('href');
-			$('html, body').stop().animate({
-				scrollTop: $(anchor).offset().top
-			}, 800);
-		});
     </script>
 </body>
 </html>
