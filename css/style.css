@@ -213,14 +213,16 @@ a { transition: color .2s ease, opacity .2s ease; }
 		radial-gradient(50% 120% at 10% 100%, rgba(59, 42, 122, .5), transparent 60%);
 	pointer-events: none;
 }
-.color h1 {
+.color h1,
+.color h2 {
 	position: relative;
 	font-family: 'Fraunces', Georgia, serif;
 	font-weight: 600;
 	letter-spacing: .12em;
 	font-size: clamp(1.7rem, 4.5vw, 2.7rem);
 }
-.color h1::after {
+.color h1::after,
+.color h2::after {
 	content: "";
 	display: block;
 	width: 66px;
@@ -482,8 +484,7 @@ a:hover .badge.color {
 #staff + .container .display-5 {
 	font-family: 'Fraunces', Georgia, serif;
 }
-.social a .fa-whatsapp,
-.modal-body .fa-whatsapp { color: #25d366; }
+.modal-body .fa-phone { color: var(--accent); }
 
 /* ---------- Section display heading (shared) ---------- */
 .display-5 {
@@ -506,6 +507,23 @@ a:hover .badge.color {
 	background-color: var(--accent) !important;
 	color: var(--navy-900) !important;
 	transform: translateY(-2px);
+}
+
+/* ---------- Instagram / Meta disclaimer ---------- */
+.ig-note {
+	color: var(--muted);
+	font-weight: 600;
+	margin-left: 1px;
+	font-size: .7em;
+}
+.social a .ig-note { color: inherit; }
+.ig-disclaimer {
+	color: rgba(255, 255, 255, .4);
+	font-size: .78rem;
+	line-height: 1.5;
+	max-width: 640px;
+	margin: 0 auto;
+	border-top: 1px solid rgba(255, 255, 255, .06);
 }
 
 /* ---------- Footer ---------- */
