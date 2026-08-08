@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Страница не найдена — Узкий взгляд</title>
+	<meta name="robots" content="noindex">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<meta name="theme-color" content="#0e194f">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+	<style>
+		:root { --navy:#0e194f; --navy-900:#070c2b; --violet:#3b2a7a; --accent:#e6a935; --accent-soft:#f0c674; }
+		* { box-sizing: border-box; margin: 0; padding: 0; }
+		html, body { height: 100%; }
+		body {
+			font-family: 'Manrope', system-ui, sans-serif;
+			color: #f5f5f5;
+			background: linear-gradient(140deg, var(--navy-900) 0%, var(--navy) 50%, var(--violet) 140%);
+			min-height: 100svh;
+			display: grid;
+			place-items: center;
+			text-align: center;
+			padding: 2rem;
+			position: relative;
+			overflow: hidden;
+		}
+		body::before {
+			content: "";
+			position: absolute; inset: 0;
+			background:
+				radial-gradient(50% 90% at 85% 0%, rgba(230,169,53,.16), transparent 60%),
+				radial-gradient(50% 90% at 10% 100%, rgba(59,42,122,.55), transparent 60%);
+			pointer-events: none;
+		}
+		.wrap { position: relative; max-width: 32rem; }
+		.eye { width: 84px; height: 84px; margin: 0 auto 1.5rem; display: block; }
+		.code {
+			font-family: 'Comfortaa', cursive;
+			font-weight: 700;
+			font-size: clamp(4.5rem, 20vw, 9rem);
+			line-height: 1;
+			letter-spacing: .02em;
+			background: linear-gradient(92deg, #fff, var(--accent-soft) 130%);
+			-webkit-background-clip: text; background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		h1 {
+			font-family: 'Fraunces', Georgia, serif;
+			font-weight: 600;
+			font-size: clamp(1.4rem, 5vw, 2rem);
+			margin: .75rem 0 .5rem;
+		}
+		p { font-weight: 300; color: rgba(255,255,255,.8); font-size: 1.05rem; margin-bottom: 2rem; }
+		.btn {
+			display: inline-block;
+			font-weight: 600;
+			text-decoration: none;
+			color: var(--navy-900);
+			background: linear-gradient(120deg, var(--accent), var(--accent-soft));
+			padding: .8rem 1.8rem;
+			border-radius: 999px;
+			transition: transform .2s ease, box-shadow .2s ease;
+			box-shadow: 0 14px 30px -12px rgba(0,0,0,.6);
+		}
+		.btn:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -14px rgba(0,0,0,.7); }
+		@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<svg class="eye" viewBox="0 0 64 64" aria-hidden="true">
+			<path d="M6 32c10-15 42-15 52 0-10 15-42 15-52 0Z" fill="none" stroke="#e6a935" stroke-width="3.5" stroke-linejoin="round"/>
+			<circle cx="32" cy="32" r="7" fill="#e6a935"/>
+		</svg>
+		<div class="code">404</div>
+		<h1>Страница не найдена</h1>
+		<p>Кажется, эта строка выпала из стихотворения. Вернёмся к началу.</p>
+		<a class="btn" href="/">На главную</a>
+	</div>
+</body>
+</html>

@@ -37,6 +37,23 @@
 	<script src="https://kit.fontawesome.com/69fabb26f9.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./css/style.css" >
 
+	<!-- Structured data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Узкий взгляд",
+		"alternateName": "Проект «Узкий взгляд»",
+		"url": "https://uzkiyprim.github.io/",
+		"logo": "https://uzkiyprim.github.io/favicon.svg",
+		"image": "https://uzkiyprim.github.io/img/main.jpg",
+		"description": "Поэтическое поле для поэтов Владивостока и Приморья",
+		"foundingDate": "2018-11",
+		"areaServed": "Владивосток, Приморский край",
+		"sameAs": ["https://vk.com/uzkiyprim"]
+	}
+	</script>
+
 </head>
 
 <body>
@@ -118,15 +135,15 @@
 			<div class="row justify-content-center">
 				<!-- 1#Сергей Козицкий -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Сергей Козицкий" class="person" data-target="#person1" data-toggle="modal" title="">
+					<a aria-label="Сергей Козицкий" class="person" data-target="#person1" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/d135c8c68070486cdbaca91bddf77841.jpg" alt="Сергей Козицкий" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person1" class="person__modal modal fade" id="person1" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person1-title" class="person__modal modal fade" id="person1" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person1">Сергей Козицкий</h5>
+								<h5 class="modal-title h5" id="person1-title">Сергей Козицкий</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Этьен Ламондуа</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -170,15 +187,15 @@
 				</div>
 				<!-- 2#Дарья Улькина -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Дарья Улькина" class="person" data-target="#person2" data-toggle="modal" title="">
+					<a aria-label="Дарья Улькина" class="person" data-target="#person2" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/750e09b4c943566cdaf3d768ddaab434.jpg" alt="Дарья Улькина" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person2" class="person__modal modal fade" id="person2" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person2-title" class="person__modal modal fade" id="person2" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person2">Дарья Улькина</h5>
+								<h5 class="modal-title h5" id="person2-title">Дарья Улькина</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -210,15 +227,15 @@
 				</div>
 				<!-- 3#Евгения Богацкая -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Евгения Богацкая" class="person" data-target="#person3" data-toggle="modal" title="">
+					<a aria-label="Евгения Богацкая" class="person" data-target="#person3" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/78f06b0b8cda849cb571453f6b32f98f.jpg" alt="Евгения Богацкая" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person3" class="person__modal modal fade" id="person3" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person3-title" class="person__modal modal fade" id="person3" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person3">Евгения Богацкая</h5>
+								<h5 class="modal-title h5" id="person3-title">Евгения Богацкая</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -251,15 +268,15 @@
 				</div>
 				<!-- 4#Михаил Белошицкий -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Михаил Белошицкий" class="person" data-target="#person4" data-toggle="modal" title="">
+					<a aria-label="Михаил Белошицкий" class="person" data-target="#person4" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/9ac7015152b5994d5a08ad9705623fe1.jpg" alt="Михаил Белошицкий" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person4" class="person__modal modal fade" id="person4" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person4-title" class="person__modal modal fade" id="person4" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person4">Михаил Белошицкий</h5>
+								<h5 class="modal-title h5" id="person4-title">Михаил Белошицкий</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Кот Баюн</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -293,15 +310,15 @@
 				</div>
 				<!-- 5#Артур Гореев -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Артур Гореев" class="person" data-target="#person5" data-toggle="modal" title="">
+					<a aria-label="Артур Гореев" class="person" data-target="#person5" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/a3856ad4b23b8a6f09e5390b145354ec.jpg" alt="Артур Гореев" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person5" class="person__modal modal fade" id="person5" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person5-title" class="person__modal modal fade" id="person5" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person5">Артур Гореев</h5>
+								<h5 class="modal-title h5" id="person5-title">Артур Гореев</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -333,15 +350,15 @@
 				</div>
 				<!-- 6#Елизавета Сказина -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Елизавета Сказина" class="person" data-target="#person6" data-toggle="modal" title="">
+					<a aria-label="Елизавета Сказина" class="person" data-target="#person6" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/05cc2655f7afef78815c49b1c7065f37.jpg" alt="Елизавета Сказина" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person6" class="person__modal modal fade" id="person6" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person6-title" class="person__modal modal fade" id="person6" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person6">Елизавета Сказина</h5>
+								<h5 class="modal-title h5" id="person6-title">Елизавета Сказина</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Снежа</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -375,15 +392,15 @@
 				</div>
 				<!-- 7#Елена Киселёва -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Елена Киселёва" class="person" data-target="#person7" data-toggle="modal" title="">
+					<a aria-label="Елена Киселёва" class="person" data-target="#person7" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/976ce967dc81e8171c2bb6d298267230.jpg" alt="Елена Киселёва" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person7" class="person__modal modal fade" id="person7" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person7-title" class="person__modal modal fade" id="person7" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person7">Елена Киселёва</h5>
+								<h5 class="modal-title h5" id="person7-title">Елена Киселёва</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -429,15 +446,15 @@
 				</div>
 				<!-- 8#Анастасия Семенихина -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Анастасия Семенихина" class="person" data-target="#person8" data-toggle="modal" title="">
+					<a aria-label="Анастасия Семенихина" class="person" data-target="#person8" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/02abdbd58c31ac8cbf0ee834669b0da1.jpg" alt="Анастасия Семенихина" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person8" class="person__modal modal fade" id="person8" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person8-title" class="person__modal modal fade" id="person8" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person8">Анастасия Семенихина</h5>
+								<h5 class="modal-title h5" id="person8-title">Анастасия Семенихина</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Сова Полярная</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -471,15 +488,15 @@
 				</div>
 				<!-- 9#Геннадий Литвиненко -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Геннадий Литвиненко" class="person" data-target="#person9" data-toggle="modal" title="">
+					<a aria-label="Геннадий Литвиненко" class="person" data-target="#person9" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/61b7cbfbecc7f51aceb1403a58acc178.jpg" alt="Геннадий Литвиненко" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person9" class="person__modal modal fade" id="person9" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person9-title" class="person__modal modal fade" id="person9" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person9">Геннадий Литвиненко</h5>
+								<h5 class="modal-title h5" id="person9-title">Геннадий Литвиненко</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Френсис Крозье</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -521,15 +538,15 @@
 				</div>
 				<!-- 10#Николай Морозов -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Николай Морозов" class="person" data-target="#person10" data-toggle="modal" title="">
+					<a aria-label="Николай Морозов" class="person" data-target="#person10" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/d569d2ce6affe3e7d7aa291cb670ea0b.jpg" alt="Николай Морозов" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person10" class="person__modal modal fade" id="person10" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person10-title" class="person__modal modal fade" id="person10" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person10">Николай Морозов</h5>
+								<h5 class="modal-title h5" id="person10-title">Николай Морозов</h5>
 								<h5 class="modal-title mx-1" style="color: #0e194f;">|</h5>
 								<h5 class="modal-title text-muted">Сказочник</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
@@ -563,15 +580,15 @@
 				</div>
 				<!-- 11#Валентина Киргетова -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Валентина Киргетова" class="person" data-target="#person11" data-toggle="modal" title="">
+					<a aria-label="Валентина Киргетова" class="person" data-target="#person11" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/b02824229637cc4723ae5a8dd7641a5c.jpg" alt="Валентина Киргетова" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person11" class="person__modal modal fade" id="person11" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person11-title" class="person__modal modal fade" id="person11" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person11">Валентина Киргетова</h5>
+								<h5 class="modal-title h5" id="person11-title">Валентина Киргетова</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -610,15 +627,15 @@
 				</div>
 				<!-- 12#Николай Вороновский -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Николай Вороновский" class="person" data-target="#person12" data-toggle="modal" title="">
+					<a aria-label="Николай Вороновский" class="person" data-target="#person12" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/fbf6d2d2352533690e24c239769b12fc.jpg" alt="Николай Вороновский" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person12" class="person__modal modal fade" id="person12" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person12-title" class="person__modal modal fade" id="person12" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person12">Николай Вороновский</h5>
+								<h5 class="modal-title h5" id="person12-title">Николай Вороновский</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -650,15 +667,15 @@
 				</div>
 				<!-- 14#Ольга Набокова -->
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Ольга Набокова" class="person" data-target="#person14" data-toggle="modal" title="">
+					<a aria-label="Ольга Набокова" class="person" data-target="#person14" data-toggle="modal">
 						<img class="rounded-circle img-fluid" src="./img/persons/8f5a79d26f75582fb766f13fafff8247.jpg" alt="Ольга Набокова" loading="lazy" decoding="async">
 					</a>
 				</div>
-				<div aria-hidden="true" aria-labelledby="person14" class="person__modal modal fade" id="person14" tabindex="-1">
+				<div aria-hidden="true" aria-labelledby="person14-title" class="person__modal modal fade" id="person14" tabindex="-1">
 					<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title h5" id="person14">Ольга Набокова</h5>
+								<h5 class="modal-title h5" id="person14-title">Ольга Набокова</h5>
 								<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
 							</div>
 							<div class="modal-body">
@@ -731,17 +748,17 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Приморский торговый Дом книги" class="person" href="http://primbook.ru/" title="">
+					<a aria-label="Приморский торговый Дом книги" class="person" href="http://primbook.ru/">
 						<img class="rounded-circle img-fluid" src="./img/partners/44ff4b936609fa63e70a3e6b9f0683cb.jpg" alt="Приморский торговый Дом книги" loading="lazy" decoding="async">
 					</a>
 				</div>
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Центр современного искусства «Заря»" class="person" href="http://zaryavladivostok.ru/" title="">
+					<a aria-label="Центр современного искусства «Заря»" class="person" href="http://zaryavladivostok.ru/">
 						<img class="rounded-circle img-fluid" src="./img/partners/3160470c6aef0e7170324d77ae9bc3fb.jpg" alt="Центр современного искусства «Заря»" loading="lazy" decoding="async">
 					</a>
 				</div>
 				<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-					<a alt="Литературно-художественный альманах «Литературный Владивосток»" class="person" title="">
+					<a aria-label="Литературно-художественный альманах «Литературный Владивосток»" class="person">
 						<img class="rounded-circle img-fluid" src="./img/partners/6e815b9878249ef08847bb48452bb5ef.jpg" alt="Литературно-художественный альманах «Литературный Владивосток»" loading="lazy" decoding="async">
 					</a>
 				</div>
